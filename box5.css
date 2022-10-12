@@ -1,0 +1,28 @@
+.user_input {
+    font-size: 1.3rem;
+    width: 25%;
+
+}
+
+.user_input p {
+    font-size: 0.8rem;
+}
+
+input {
+    font-size: 1rem;
+    padding: 0.3 0.8;
+}
+
+#map {
+    width: 65%;
+}
+
+.country-details {
+    width: 25%;
+    height: 38%;
+    right: 4%;
+}
+
+.country_img {
+    height: 36%;
+}

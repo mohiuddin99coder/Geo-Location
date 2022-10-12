@@ -1,0 +1,64 @@
+header {
+    font-size: 2rem;
+    width: 100%;
+    height: 5%;
+}
+
+.user_input {
+    top: 15%;
+    left: 4%;
+    font-size: 1rem;
+    width: 90%;
+}
+
+.user_input p {
+    font-size: 0.8rem;
+}
+
+input {
+    font-size: 1rem;
+}
+
+.btn-search,
+.btn-current {
+    font-size: 0.7rem;
+}
+
+#map {
+    top: 60%;
+    left: 4%;
+    width: 90%;
+    height: 45%;
+}
+
+.country-details {
+    /* border: 2px solid black; */
+    margin-bottom: 10rem;
+    top: 110%;
+    left: 25%;
+    width: 50%;
+    height: 40%;
+}
+
+.country_img {
+    height: 37%;
+}
+
+.country_name {
+    font-size: 1rem;
+}
+
+.country_region,
+.country_row,
+.country_row span {
+    font-size: 0.8rem;
+}
+
+.country_row:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    font-size: 0.5rem;
+    bottom: -55%;
+}

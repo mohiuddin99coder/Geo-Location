@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=MedievalSharp&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'MedievalSharp', cursive;
+  color: #555;
+  background-color: #f7f7f7b8;
+  min-height: 100%;
+  min-width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+header {
+  font-family: 'Black Ops One', cursive;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 8%;
+  font-size: 5rem;
+  padding: 1rem 0;
+  color: antiquewhite;
+  background-color: black;
+}
+
+#map {
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  width: 70%;
+  height: 80%;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px 5px;
+}
+
+.user_input {
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 15%;
+  right: 4%;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  width: 20%;
+}
+
+.user_input p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: rgba(52, 52, 202, 0.625);
+}
+
+.place_label {
+  margin-top: 0.5rem;
+}
+
+.place_label,
+.lat_label,
+.long_label {
+  margin-left: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+input {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(222, 220, 220);
+}
+
+.btn-current {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border: none;
+  color: rgba(255, 255, 255, 0.882);
+  background-color: rgba(39, 38, 38, 0.833);
+  border-radius: 5px;
+  position: absolute;
+  top: -20px;
+}
+
+.btn-search {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: white;
+}
+
+.btn-refresh {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.country-details {
+  /* border: 2px solid black; */
+  position: absolute;
+  bottom: 3%;
+  right: 7%;
+  width: 14%;
+  height: 35%;
+
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.country {
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem 0.5rem rgba(65, 61, 61, 0.1);
+  /* font-size: 1rem; */
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  /* overflow: hidden; */
+}
+
+.country_img {
+  width: 100%;
+  height: 35%;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.country-data {
+  padding: 1rem 1rem 1rem 2.5rem;
+}
+
+.country_name {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.country_region {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.country_row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.country_row span {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+footer {
+  color: antiquewhite;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}

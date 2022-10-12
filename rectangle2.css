@@ -1,0 +1,47 @@
+.user_input {
+    font-size: 1.3rem;
+    width: 25%;
+
+}
+
+.user_input p {
+    font-size: 0.8rem;
+}
+
+input {
+    font-size: 1rem;
+    padding: 0.3 0.8;
+}
+
+.btn-current,
+.btn-search {
+    font-size: 1rem;
+}
+
+.btn-current {
+    top: -25px;
+}
+
+#map {
+    width: 65%;
+}
+
+.country-details {
+    width: 18%;
+    height: 42%;
+    right: 7.5%;
+}
+
+.country_name {
+    font-size: 1.5rem;
+}
+
+.country_region,
+.country_row {
+    font-size: 1rem;
+}
+
+
+.country_img {
+    height: 39%;
+}

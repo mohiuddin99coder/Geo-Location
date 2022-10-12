@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geo Location</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <link rel="stylesheet" media="screen and (max-width: 2040px) and (max-height: 1440px)" href="large.css">
+  <link rel="stylesheet" media="screen and (max-width: 2040px) and (max-height: 1080px)" href="rectangle2.css">
+  <link rel="stylesheet" media="screen and (max-width: 1080px) and (max-height: 1080px)" href="box5.css">
+  <link rel="stylesheet" media="screen and (max-width: 960px) and (max-height: 1080px)" href="tablet2.css">
+  <link rel="stylesheet" media="screen and (max-width: 2040px) and (max-height: 960px)" href="rectangle3.css">
+  <link rel="stylesheet" media="screen and (max-width: 1440px) and (max-height: 960px)" href="rectangle4.css">
+  <link rel="stylesheet" media="screen and (max-width: 960px) and (max-height: 960px)" href="box4.css">
+  <link rel="stylesheet" media="screen and (max-width: 720px) and (max-height: 960px)" href="tablet1.css">
+  <link rel="stylesheet" media="screen and (max-width: 720px) and (max-height: 720px)" href="box3.css">
+  <link rel="stylesheet" media="screen and (max-width: 480px) and (max-height: 840px)" href="phone1.css">
+  <link rel="stylesheet" media="screen and (max-width: 480px) and (max-height: 720px)" href="phone.css">
+  <link rel="stylesheet" media="screen and (max-width: 480px) and (max-height: 480px)" href="box2.css">
+  <link rel="stylesheet" media="screen and (max-width: 320px) and (max-height: 480px)" href="rectangle1.css">
+  <link rel="stylesheet" media="screen and (max-width: 320px) and (max-height: 320px)" href="box1.css">
+
+</head>
+
+<body>
+  <main class="container">
+    <header>Geolocation...</header>
+    <div class="user_input">
+      <P>Search by country name...</P>
+      <label for="address" class="place_label">Place Name:</label>
+      <input type="text" id="place" />
+      <p>Search by coordinates...</p>
+      <label for="latitude" class="lat_label">Latitude:</label>
+      <input type="text" id="latitude" />
+      <label for="longitude" class="long_label">Longitude:</label>
+      <input type="text" id="longitude" />
+      <button class="btn-current" onclick="getCurrentLocation()">Current Location</button>
+      <button type="button" class="btn-search">Get Location</button>
+      <button type="button" class="btn-refresh">🔄</button>
+    </div>
+    <div id="map"></div>
+
+    <div class="country-details">
+      <article class="country">
+        <img class="country_img">
+        <div class="country-data">
+          <h3 class="country_name">India</h3>
+          <h4 class="country_region">Hyderabad</h4>
+          <p class="country_row population"><span>👨🏻‍🤝‍👩🏻</span>People</p>
+          <p class="country_row languages"><span>🗣️</span>Language</p>
+          <p class="country_row currency"><span>💰</span>Currency</p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <pre>  Copyright &copy;  shahfaizan-geolocation.netlify.app  All rights reserved! </pre>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+    integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
